@@ -1,5 +1,16 @@
-<div class="course-container" *ngFor="let course of courses">
-    <div class="course-card">
+<div class="">
+<app-search (searchTextChanged)="onSearchTextEntered($event)" ></app-search>
+<app-filter
+
+
+
+
+
+></app-filter>
+  
+</div>
+<div class="course-container" >
+    <div class="course-card"*ngFor="let course of courses">
         <div>
             <img [src]="course.image" style="width:220px; height:144px;">
         </div>
